@@ -21,3 +21,17 @@ npm -v # should print `10.8.2`
 npm install pg
 npm install next-auth
 
+-------
+
+To list all your PostgreSQL databases, use the following command 
+psql -l
+This will display a list of all the databases in your PostgreSQL instance.
+
+2. Connect to Your Database
+If you want to connect to the database you created, run the following command:
+psql database
+
+
+brew services start postgresql
+psql -h localhost -U kayleighkoekemoer -d database -f ./database_schema.sql
+psql -h localhost -U kayleighkoekemoer -d database
